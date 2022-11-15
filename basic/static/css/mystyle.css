@@ -1,0 +1,73 @@
+body {
+background: #42275a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+/*   background-repeat: no-repeat;
+  background-attachment: fixed; */
+  
+  
+}
+
+#content{
+    width: 100%;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+header{
+    
+    max-width: 85%;
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+h1, p{
+	color: #e2e2e2;
+    text-align: left;
+    
+}
+
+#form{
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.image{
+
+}
+
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:70px;
+  height:25px;
+  border-width:1px;
+  color:#fff;
+  border-color:#599bb3;
+  font-weight:bold;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  box-shadow: 0px 10px 14px -7px #276873;
+  text-shadow: 0px 1px 0px #3d768a;
+  background:linear-gradient(#599bb3, #408c99);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#408c99, #599bb3);
+}
+              

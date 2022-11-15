@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}The onclick Event {% endblock %}
+
+{% block content %}
+<div id='content'>
+    
+<!--<header>
+<h1>HTML DOM Events</h1>
+<br>
+<h2>The onclick Event</h2>
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+
+<button class='buttonClass' onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+</header> -->
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">The onclick Event</h5>
+    <p class="card-text"><p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+    <button type="button" onclick="myFunction()" class="btn btn-primary">Click me</button>
+    <div id="demo"></div>
+  </div>
+</div>
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+{% endblock %}
