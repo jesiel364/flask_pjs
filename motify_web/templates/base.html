@@ -21,6 +21,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kolker+Brush&family=Reenie+Beanie&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mystyle.css') }}" />
@@ -34,7 +37,7 @@
   <!-- Container wrapper -->
   <div class="container">
     <!-- Navbar brand -->
-    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+    <a id="logo" class="navbar-brand me-2" href="https://mdbgo.com/">
         <h3>Motify</h3>
       <!--<img
         src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
@@ -102,6 +105,9 @@
 
 	{% endblock %}
 </div>
+<footer>
+    <span> Jesiel Gomes</span>
+</footer>
     <script type="text/javascript" src="{{ url_for( 'static', filename='js/mdb.min.js') }}"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="{{ url_for( 'static', filename='js/myscript.js') }}"></script>
