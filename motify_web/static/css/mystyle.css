@@ -20,6 +20,7 @@ height: 800px;
 header{
     
     max-width: 85%;
+    margin: auto;
     background: #141E30;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -101,4 +102,31 @@ footer{
 
 #logo {
     font-family: 'Caveat', cursive;
+}
+
+.salvos-item {
+    color: #fafafa;
+    font-family:'poppins', Sans-Serif;
+    font-size: 18px;
+
+    max-width: 85%;
+    padding-top: 10%;
+    margin: auto;
+}
+
+.salvos h2 {
+    color: #fafafa;
+    margin: 10px;
+    font-family:'poppins', Sans-Serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+#heart{
+   color: #A20617;
+   margin-top: 8px;
+   margin-left: 20px;
+   padding: 0;
 }

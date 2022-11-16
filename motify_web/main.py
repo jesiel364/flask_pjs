@@ -11,5 +11,9 @@ def index():
         print(conselho)
     return render_template('/home.html', data = conselho)
     
+@app.route('/salvos')
+def salvos():
+    return render_template('/salvos.html')
+    
 if __name__ == '__main__':
     app.run(debug=True, port=8089)
