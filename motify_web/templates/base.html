@@ -4,6 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% block title%}{% endblock %}</title>
+	
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 	<!-- MDB icon -->
     <link rel="icon" href="{{ url_for('static', filename='img/mdb-favicon.ico') }}" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -21,6 +26,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mystyle.css') }}" />
 </head>
 <body>
+<div class="bg-image"></div>
   
 
 	<!-- Navbar -->
@@ -29,13 +35,14 @@
   <div class="container">
     <!-- Navbar brand -->
     <a class="navbar-brand me-2" href="https://mdbgo.com/">
-      <img
+        <h3>Motify</h3>
+      <!--<img
         src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
         height="16"
         alt="MDB Logo"
         loading="lazy"
         style="margin-top: -1px;"
-      />
+      /> -->
     </a>
 
     <!-- Toggle button -->

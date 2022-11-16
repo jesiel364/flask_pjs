@@ -4,18 +4,26 @@
 
 {% block content %}
 <div id='content'>
+    
+  
 
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Advice</h5>
-    <p class="card-text">Do not compare yourself with others.</p>
-
+    
+    <p class="card-text">{{data}}</p>
+    
 </div>
 <div class='buttonsGroup'>
   <!-- Facebook -->
-<a style="color: #3b5998;" href="#!" role="button">
+<!-- <a style="color: #3b5998;" href="#!" role="button">
   <i class="fab fa-facebook-f fa-lg"></i>
-</a>
+</a>-->
+<button type="button" class="btn btn-dark btn-floating" data-mdb-ripple-color="dark">
+
+  <i class="fas fa-refresh"></i>
+
+</button>
 <button type="button" class="btn btn-dark btn-floating" data-mdb-ripple-color="dark">
   <i class="fas fa-copy"></i>
 </button>
@@ -29,4 +37,5 @@
   </div>
 
 </div>
+<div class="bg-image"></div>
 {% endblock %}
