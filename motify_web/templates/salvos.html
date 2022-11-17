@@ -11,13 +11,27 @@
 {% for key in data %}
 <div class="salvos-item">
     <i  class="fas fa-quote-left fa-2x fa-pull-left"></i>
-  <p>{{key.advice}}</p>
+  <p class="adv">{{key.advice}}</p>
   <a href="{{ url_for('deletar', key = key.id ) }}">
 
+<div class='buttonsGroup'>
 <button onclick="" id="texto" type="button" class="btn btn-dark btn-floating" data-mdb-ripple-color="dark">
 
   <i class="fas fa-minus"></i>
 </button></a>
+
+ 
+<button onclick="copy()" id="texto" type="button" class="btn btn-dark btn-floating" data-mdb-ripple-color="dark">
+  <i class="fas fa-copy"></i>
+</button>
+
+
+
+<button type="button" class="btn btn-dark btn-floating">
+  <i class="fas fa-share-nodes"></i>
+</button>
+
+</div>
 
 </div>
 {% endfor %}

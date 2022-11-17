@@ -55,7 +55,7 @@ p {
 
             
 
-.buttonsGroup{
+.buttonsGroup2{
   display: flex;
   
   margin-bottom: 18px;
@@ -75,15 +75,15 @@ p {
   width: 100%;
   
   height: 300px;
-  -webkit-box-shadow: 0px 5px 5px 5px #000000, 5px 5px 5px 6px rgba(0,0,0,0.33); 
-box-shadow:5px 5px 5px -7px #000000, -1px 5px 50px 6px rgba(0,0,0,0.33);
+      -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+background: #B3FFAB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .card-text{
-    
-}
-
-#adv{
     
 }
 
@@ -108,16 +108,23 @@ footer{
     color: #fafafa;
     font-family:'poppins', Sans-Serif;
     font-size: 18px;
-
+    margin-top: 20px;
     max-width: 85%;
-    padding-top: 10%;
+    padding: 10%;
+    border-radius: 12px;
     margin: auto;
+    margin-bottom: 25px;
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .salvos h2 {
     color: #fafafa;
     
-    margin-right: 47px;
+    margin-right: 52px;
     font-family:'poppins', Sans-Serif;
     font-size: 24px;
     font-weight: bold;
@@ -125,9 +132,50 @@ footer{
     
 }
 
+.salvos {
+    max-width: 500px;
+    margin: auto;
+}
+
+.salvos header {
+    margin-bottom: 20px;
+}
+
+.adv {
+    margin-bottom: 45px;
+}
+
 #heart{
-   color: #A20617;
-   margin-top: 8px;
+   color: #FF0000;
+   margin-top: 4px;
    margin-left: 20px;
    padding: 0;
+}
+
+.buttonsGroup2{
+  display: flex;
+  
+  margin-bottom: 12px;
+  margin-right: 5px;
+
+  justify-content: space-around;
+}
+
+#dev {
+/*     background-image: url("https://www.nicepng.com/png/detail/4-42189_png-file-size-black-brush-stroke-png.png"); */
+}
+
+.buttonsGroup2 .btn, .buttonsGroup .btn {
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    font-size: 16px;
+}
+
+.buttonsGroup2{
+  display: flex;
+  
+  margin-bottom: 18px;
+  margin-right: 5px;
+
+  justify-content: space-around;
 }
