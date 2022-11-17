@@ -11,17 +11,24 @@
   <div class="card-body">
     <h5 class="card-title">Advice</h5>
     
-    <p id="adv" class="card-text">{{data}}</p>
+    <p id="adv" class="card-text">{{conselho}}</p>
+    <p id="adv" class="card-text">{{key_id}}</p>
+    
     
 </div>
 <div class='buttonsGroup'>
+
+<a href="{{ url_for('salvar', key = key_id ) }}">
+<button onclick="" id="texto" type="button" class="btn btn-dark btn-floating" data-mdb-ripple-color="dark">
+  <i class="fas fa-heart"></i>
+</button></a>
  
 <button onclick="copy()" id="texto" type="button" class="btn btn-dark btn-floating" data-mdb-ripple-color="dark">
   <i class="fas fa-copy"></i>
 </button>
-<button type="button" class="btn btn-dark btn-floating">
-  <i class="fa fa-heart"></i>
-</button>
+
+
+
 <button type="button" class="btn btn-dark btn-floating">
   <i class="fas fa-share-nodes"></i>
 </button>
