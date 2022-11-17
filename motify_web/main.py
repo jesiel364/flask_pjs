@@ -14,12 +14,23 @@ def index():
     
 @app.route('/salvos')
 def salvos():
-    return render_template('/salvos.html')
+    requisicao = requests.get('https://625e20a26c48e8761ba572c5.mockapi.io/api/v1/Motify').json()
+    return render_template('/salvos.html', data = requisicao)
     
-@app.route('/salvar/<string:key>')
-def salvar(key):
-    print(key)
+@app.route('/salvar/<string:advice>', methods=['POST', 'GET'])
+def salvar(advice):
+    
+    requisicao = requests.post('https://625e20a26c48e8761ba572c5.mockapi.io/api/v1/Motify', data=({'advice': advice}))
+    print(advice)
     return redirect(url_for('index'))
-    
+
+@app.route('/salvos/remover/<string:key>', methods=['POST', 'GET'])
+
+def deletar(key):
+
+    requisicao = requests.delete(f'https://625e20a26c48e8761ba572c5.mockapi.io/api/v1/Motify/{key}')
+    print(key)
+    return redirect(url_for('salvos'))
+  
 if __name__ == '__main__':
     app.run(debug=True, port=8089)
