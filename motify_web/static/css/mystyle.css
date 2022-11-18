@@ -41,11 +41,13 @@ h1, p{
 .card-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    color: #fefefe;
 }
-p {
+.card p, .salvos-item p {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 200;
+    color: #fefefe;
 }
 
 #form{
@@ -54,16 +56,30 @@ p {
   padding: 20px;
 }
 
-
-            
+.fas {
+    color: springgreen;
+    font-size: 20px;
+}
+           
 
 .buttonsGroup2{
-  display: flex;
-  
-  margin-bottom: 18px;
-  margin-right: 5px;
+  display: flex;  
+  padding: 10px;
+/*   background-color: grey; */
+  justify-content: space-evenly;
+  max-width: 100%;
+}
 
+.buttonsGroup{
+  display: flex;  
+  /* margin-bottom: 18px;
+  margin-right: 5px; */
   justify-content: space-around;
+  padding: 10px;
+/*   margin-top: 10px; */
+/*   background-color: grey; */
+  justify-content: space-around;
+/*   max-width: 400px; */
 }
 
 #home{
@@ -74,20 +90,33 @@ p {
 .card {
   margin-right: 20px;
   margin-left: 20px;
-  width: 100%;
+  max-width: 800px;
   margin-top: 20px;
   
-  height: 300px;
+  min-height: 300px;
+  max-height: 400px;
       -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-background: #B3FFAB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.card-text{
+#number p{
+    font-weight: bold;
+    justify-content: start;
+/*     margin-top: 100px; */
     
+}
+
+#space{
+    max-height: 200px;
+    display: flex;
+}
+
+#number p{
+    font-size: 16px;
 }
 
 footer{
@@ -140,9 +169,10 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-        background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343, #000000);  
-    background: linear-gradient(to right, #434343, #000000);
+background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .salvos header {
@@ -161,17 +191,10 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
    padding: 0;
 } 
 
-.buttonsGroup2{
-  display: flex;
-  
-  margin-bottom: 12px;
-  margin-right: 5px;
-
-  justify-content: space-around;
-}
 
 #dev {
-/*     background-image: url("https://www.nicepng.com/png/detail/4-42189_png-file-size-black-brush-stroke-png.png"); */
+    background: transparent;
+
 }
 
 .buttonsGroup2 .btn, .buttonsGroup .btn {
@@ -180,16 +203,22 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     font-size: 16px;
 }
 
-.buttonsGroup2{
-  display: flex;
-  
-  margin-bottom: 18px;
-  margin-right: 5px;
-
-  justify-content: space-around;
-}
-
-.login {
+form {
     max-width: 80%;
     margin: auto;
+}
+
+#login{
+    height: 800px;
+    padding: 20px;
+    margin-bottom: 0px;
+    background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+form p{
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
 }
