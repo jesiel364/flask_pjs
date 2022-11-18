@@ -31,6 +31,10 @@ def deletar(key):
     requisicao = requests.delete(f'https://625e20a26c48e8761ba572c5.mockapi.io/api/v1/Motify/{key}')
     print(key)
     return redirect(url_for('salvos'))
-  
+
+@app.route('/login', methods=['POST', 'GET'])
+def login():
+    return render_template('/login.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=8089)
