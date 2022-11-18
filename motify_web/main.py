@@ -36,5 +36,9 @@ def deletar(key):
 def login():
     return render_template('/login.html')
 
+@app.route('/adicionar', methods=['POST', 'GET'])
+def add():
+    return render_template('/adicionar.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=8089)
