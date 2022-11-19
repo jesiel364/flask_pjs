@@ -36,16 +36,14 @@ def deletar(key):
 def login():
     return render_template('/login.html')
 
-@app.route('/registrar/', methods=['POST', 'GET'])
+@app.route('/registrar', methods=['POST', 'GET'])
 def registrar():
     if request.method == 'POST':
-        # user = request.form['loginName']
-        userName = request.form['registerUsername']
+        
         email = request.form['email']
-        pwd = request.form['registerPassword']
-        pwd2 = request.form['registerRepeatPassword']
-        print(user, email, pwd)
-        return redirect(url_for('index'))
+        pwd = request.form['pwd']
+        print(email, pwd)
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
