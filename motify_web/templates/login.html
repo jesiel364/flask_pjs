@@ -36,7 +36,7 @@
 <!-- Pills content -->
 <div class="tab-content">
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form method="post" action="{{url_for('registrar')}}">
+    <form method="post" action="{{url_for('entrar')}}">
       <div class="text-center mb-3">
         <p>Sign in with:</p>
         <button type="button" class="btn btn-primary btn-floating mx-1">
@@ -96,7 +96,7 @@
     </form>
   </div>
   <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-    <form>
+    <form method="post" action="{{url_for('registrar')}}">
       <div class="text-center mb-3">
         <p>Sign up with:</p>
         <button type="button" class="btn btn-primary btn-floating mx-1">
@@ -118,33 +118,28 @@
 
       <p class="text-center">or:</p>
 
-      <!-- Name input -->
-      <div class="form-outline mb-4">
-        <input type="text" id="registerName" name="registerName" class="form-control" />
-        <label class="form-label" for="registerName">Name</label>
-      </div>
 
       <!-- Username input -->
       <div class="form-outline mb-4">
-        <input type="text" id="registerUsername" name="registerUsername" class="form-control" />
+        <input type="text" id="nick" name="nick" class="form-control" />
         <label class="form-label" for="registerUsername">Name</label>
       </div>
 
       <!-- Email input -->
       <div class="form-outline mb-4">
-        <input type="email" id="registerEmail" name="registerEmail" class="form-control" />
+        <input type="email" id="newEmail" name="newEmail" class="form-control" />
         <label class="form-label" for="registerEmail">Email</label>
       </div>
 
       <!-- Password input -->
       <div class="form-outline mb-4">
-      <input type="password" id="registerPassword" name="registerPassword" class="form-control" />
+      <input type="password" id="newPwd" name="newPwd" class="form-control" />
         <label class="form-label" for="registerPassword">Password</label>
       </div>
 
       <!-- Repeat Password input -->
       <div class="form-outline mb-4">
-        <input type="password" id="registerRepeatPassword" name="registerRepeatPassword" class="form-control" />
+        <input type="password" id="newPwd2" name="newPwd2" class="form-control" />
         <label class="form-label" for="registerRepeatPassword">Repeat password</label>
       </div>
 

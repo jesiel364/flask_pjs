@@ -90,14 +90,14 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
-<div class=""></div>
+<div class="flex-column"></div>
 {% with messages=get_flashed_messages(with_categories=true) %}
         {% if messages %}
           {% for category,message in messages %}
-            <div class='alert alert-{{category}} mb-0 fixed-top'>{{message}}
-            <br>
-            <button onclick="removeFlash()" class='buttonClass'>Sim</button>
-            <button class='buttonClass'>Não</button></div>
+            <div id="alert" class='alert alert-{{category}} m-0 fixed-top p-2'><p class="">{{message}}</p>
+            
+            <button class="btn" onclick="toggle()">X</button>
+            </div>
           {% endfor %}
         {% endif %}
       {% endwith %}
@@ -114,11 +114,18 @@
     <script type="text/javascript" src="{{ url_for( 'static', filename='js/myscript.js') }}"></script>
     
     
-    <script>
-    function remove_Flash() {
-        console.log("Função Disparada!")
-}
-        
-    </script>
-</body>
+<script>
+
+
+    function toggle() {
+      var el = document.getElementById('alert');
+
+      if ( el.style.display != 'none' ) {
+      el.style.display = 'none';
+      }
+      else if(el.style.display != 'block'){
+      el.style.display = 'block';
+      }
+    }
+  </script></body>
 </html>
