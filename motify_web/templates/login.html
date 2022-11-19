@@ -36,7 +36,7 @@
 <!-- Pills content -->
 <div class="tab-content">
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form>
+    <form method="post" action="{{url_for('registrar')}}">
       <div class="text-center mb-3">
         <p>Sign in with:</p>
         <button type="button" class="btn btn-primary btn-floating mx-1">
@@ -120,7 +120,7 @@
 
       <!-- Name input -->
       <div class="form-outline mb-4">
-        <input type="text" id="registerName" class="form-control" />
+        <input type="text" name="registerName" class="form-control" />
         <label class="form-label" for="registerName">Name</label>
       </div>
 
