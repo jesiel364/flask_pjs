@@ -27,7 +27,7 @@
       role="tab"
       aria-controls="pills-register"
       aria-selected="false"
-      >Register</a
+      >Criar conta</a
     >
   </li>
 </ul>
@@ -38,7 +38,7 @@
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
     <form method="post" action="{{url_for('entrar')}}">
       <div class="text-center mb-3">
-        <p>Sign in with:</p>
+        <p>Entrar com:</p>
         <button type="button" class="btn btn-primary btn-floating mx-1">
           <i class="fab fa-facebook-f"></i>
         </button>
@@ -56,18 +56,18 @@
         </button>
       </div>
 
-      <p class="text-center">or:</p>
+      <p class="text-center">ou:</p>
 
       <!-- Email input -->
       <div class="form-outline mb-4">
         <input type="email" name="email" id="email" class="form-control bg-transparent" />
-        <label class="form-label" for="loginName">Email or username</label>
+        <label class="form-label" for="loginName">Email</label>
       </div>
 
       <!-- Password input -->
       <div class="form-outline mb-4">
         <input type="password" id="pwd" name="pwd" class="form-control" />
-        <label class="form-label" for="loginPassword">Password</label>
+        <label class="form-label" for="loginPassword">Senha</label>
       </div>
 
       <!-- 2 column grid layout -->
@@ -76,13 +76,13 @@
           <!-- Checkbox -->
           <div class="form-check mb-3 mb-md-0">
             <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
-            <label class="form-check-label" for="loginCheck"> Remember me </label>
+            <label class="form-check-label" for="loginCheck"> Lembrar </label>
           </div>
         </div>
 
         <div class="col-md-6 d-flex justify-content-center">
           <!-- Simple link -->
-          <a href="#!">Forgot password?</a>
+          <a href="#!">Esqueceu a senha?</a>
         </div>
       </div>
 
@@ -91,14 +91,14 @@
 
       <!-- Register buttons -->
       <div class="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
+        <p>Não tem conta? <a href="#!">Criar conta</a></p>
       </div>
     </form>
   </div>
   <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
     <form method="post" action="{{url_for('registrar')}}">
       <div class="text-center mb-3">
-        <p>Sign up with:</p>
+        <p>Entrar com:</p>
         <button type="button" class="btn btn-primary btn-floating mx-1">
           <i class="fab fa-facebook-f"></i>
         </button>
@@ -116,13 +116,13 @@
         </button>
       </div>
 
-      <p class="text-center">or:</p>
+      <p class="text-center">ou:</p>
 
 
       <!-- Username input -->
       <div class="form-outline mb-4">
         <input type="text" id="nick" name="nick" class="form-control" />
-        <label class="form-label" for="registerUsername">Name</label>
+        <label class="form-label" for="registerUsername">Nome</label>
       </div>
 
       <!-- Email input -->
@@ -134,13 +134,13 @@
       <!-- Password input -->
       <div class="form-outline mb-4">
       <input type="password" id="newPwd" name="newPwd" class="form-control" />
-        <label class="form-label" for="registerPassword">Password</label>
+        <label class="form-label" for="registerPassword">Senha</label>
       </div>
 
       <!-- Repeat Password input -->
       <div class="form-outline mb-4">
         <input type="password" id="newPwd2" name="newPwd2" class="form-control" />
-        <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+        <label class="form-label" for="registerRepeatPassword">Repetir senha</label>
       </div>
 
       <!-- Checkbox -->
@@ -155,12 +155,12 @@
           aria-describedby="registerCheckHelpText"
         />
         <label class="form-check-label" for="registerCheck">
-          I have read and agree to the terms
+          Eu aceito todos os termos e condições de uso.
         </label>
       </div>
 
       <!-- Submit button -->
-      <button type="submit" value="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+      <button type="submit" value="submit" class="btn btn-primary btn-block mb-3">Criar</button>
     </form>
   </div>
 </div>

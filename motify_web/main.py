@@ -69,11 +69,6 @@ def registrar():
 
             
         return redirect(url_for('login'))
-
-
-
-
-        
     
 
 @app.route('/entrar', methods=['POST', 'GET'])
@@ -106,6 +101,10 @@ def entrar():
 
 
     return redirect(url_for('index'))
+
+@app.route('/add')
+def add():
+    return render_template('/adicionar.html')
 
 
 if __name__ == '__main__':
