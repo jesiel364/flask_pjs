@@ -1,11 +1,7 @@
 from flask import Flask, render_template, url_for, flash, redirect, request
 import requests
-import sqlite3
-
-
 
 app = Flask('__main__')
-
 
 @app.route('/')
 def index():
@@ -43,71 +39,15 @@ def login():
 @app.route('/registrar', methods=['POST', 'GET'])
 def registrar():
     if request.method == 'POST':
-
-        #Register
-        name = request.form['nick']
-        newEmail = request.form['newEmail']
-        newPwd = request.form['newPwd']
-        newPwd2 = request.form['newPwd2']
-        dados = name, newEmail, newPwd
-
-        try:
-            if newPwd == newPwd2:
-                conn = sqlite3.connect('users.db')
-                cursor = conn.cursor()
-                cursor.execute('''
-                INSERT INTO users (nome, email, senha)
-                VALUES (?,?,?)
-                ''',dados)
-                conn.commit()
-                flash(f'Sua conta foi criada com sucesso!', 'success')
-            else:
-                flash('As senhas não são iguais!', 'danger')
-        except:
-            flash('Não foi possivel completar o cadastro', 'danger')
-                
-
-            
-        return redirect(url_for('login'))
-
-
-
-
         
-    
-
-@app.route('/entrar', methods=['POST', 'GET'])
-def entrar():
-    if request.method == 'POST':
-        
-        #Login
         email = request.form['email']
         pwd = request.form['pwd']
-        dados = email, pwd
-        print(dados)
-
-        conn = sqlite3.connect('users.db')
-        cursor = conn.cursor()
-        cursor.execute('SELECT senha FROM users where email=?', (email,))
-        # flash('Usuário logado', 'success')
-        # senha = str(cursor.fetchone(3))
-        
-        if cursor.fetchone()[0] == pwd:
-        # else:
-            flash('logado', 'light')
-        else:
-            flash('Não encontrado', 'light')
-
-
-
-        # except:
-        #     flash('Usuário não encontrado', 'danger')
-        #     return redirect(url_for('login'))
-
-
+        print(email, pwd)
     return redirect(url_for('index'))
-
+    
+@app.route('/adicionar', methods=['POST', 'GET'])
+def adicionar():
+    return render_template('adicionar.html')
 
 if __name__ == '__main__':
-    app.secret_key='12345'
     app.run(debug=True, port=8089)
