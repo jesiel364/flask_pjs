@@ -60,13 +60,13 @@
 
       <!-- Email input -->
       <div class="form-outline mb-4">
-        <input type="email" id="loginName" class="form-control bg-transparent" />
+        <input type="email" name="loginName" id="loginName" class="form-control bg-transparent" />
         <label class="form-label" for="loginName">Email or username</label>
       </div>
 
       <!-- Password input -->
       <div class="form-outline mb-4">
-        <input type="password" id="loginPassword" class="form-control" />
+        <input type="password" id="loginPassword" name="loginPassword" class="form-control" />
         <label class="form-label" for="loginPassword">Password</label>
       </div>
 
@@ -120,31 +120,31 @@
 
       <!-- Name input -->
       <div class="form-outline mb-4">
-        <input type="text" name="registerName" class="form-control" />
+        <input type="text" id="registerName" name="registerName" class="form-control" />
         <label class="form-label" for="registerName">Name</label>
       </div>
 
       <!-- Username input -->
       <div class="form-outline mb-4">
-        <input type="text" id="registerUsername" class="form-control" />
-        <label class="form-label" for="registerUsername">Username</label>
+        <input type="text" id="registerUsername" name="registerUsername" class="form-control" />
+        <label class="form-label" for="registerUsername">Name</label>
       </div>
 
       <!-- Email input -->
       <div class="form-outline mb-4">
-        <input type="email" id="registerEmail" class="form-control" />
+        <input type="email" id="registerEmail" name="registerEmail" class="form-control" />
         <label class="form-label" for="registerEmail">Email</label>
       </div>
 
       <!-- Password input -->
       <div class="form-outline mb-4">
-        <input type="password" id="registerPassword" class="form-control" />
+      <input type="password" id="registerPassword" name="registerPassword" class="form-control" />
         <label class="form-label" for="registerPassword">Password</label>
       </div>
 
       <!-- Repeat Password input -->
       <div class="form-outline mb-4">
-        <input type="password" id="registerRepeatPassword" class="form-control" />
+        <input type="password" id="registerRepeatPassword" name="registerRepeatPassword" class="form-control" />
         <label class="form-label" for="registerRepeatPassword">Repeat password</label>
       </div>
 
@@ -155,6 +155,7 @@
           type="checkbox"
           value=""
           id="registerCheck"
+          name="registerCheck"
           checked
           aria-describedby="registerCheckHelpText"
         />
